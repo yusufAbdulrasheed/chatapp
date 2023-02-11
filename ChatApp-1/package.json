@@ -1,0 +1,27 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "A nodejs app that uses web sockets for chat feature",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devstart": "env-cmd -f ./configs/dev.env nodemon app.js",
+    "test": "env-cmd -f ./configs/test.env jest --watchAll --runInBand --detectOpenHandles"
+  },
+  "author": "Abdulrasheed",
+  "license": "ISC",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.7",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "profanity-hindi": "^1.1.0",
+    "socket.io": "^4.5.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^28.1.0"
+  }
+}

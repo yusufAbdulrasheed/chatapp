@@ -1,0 +1,20 @@
+<% layout('layouts/boilerplate') %>
+<div class="chat">
+    <div id="chat-sidebar" class="chat__sidebar"></div>
+    <div class="chat__main">
+        <div id="messages" class="chat__messages">
+           
+        </div>
+
+        <div class="compose">
+            <form id="message-form">
+                <input name="message" id="message" placeholder="Message" required autocomplete="off">
+                <button id="sendMessageBtn">Send</button>
+            </form>
+            <button id="share-location">Send location</button>
+        </div>
+    </div>
+</div>
+
+<script src="./socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>
